@@ -1,0 +1,10 @@
+Provided below the ###DOCUMENT HERE line you find a pension benefit scheme. Extract the following important pieces of information:
+- age requirements for pension. Please include all age requirements information, including early pensions, and gender-specific requirements.
+- inflationary increased applied if any at all. Again, provide all requirement listed in the document.
+- What percentage of pension is given to either spouse or dependents (i.e. children) after the pensioner's death? Provide for both cases where a pensioner has taken out a lumpsum (commutation) and not. 
+- what conditions will make an employee eligible for early retirement due to incapacitation and what rules apply to such cases (e.g. will benefits increase or will beneficiary still receive the same total amount?)
+
+Important: Output should be plain text and only plain text should be provided in output. Don't make stuff up or hallucinate when you can't find an answer to a given question. 
+Also, if multiple schemes can be found, select information only from that scheme whose activation date is most recent. If schemes have different application criteria than dates, just always pick the last scheme. (for example, if there is scheme x and y, pick scheme y if it appears after scheme 1 in order)
+
+###DOCUMENT HERE

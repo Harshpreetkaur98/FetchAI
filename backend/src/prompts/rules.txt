@@ -1,0 +1,21 @@
+Important: only output the code fragment and nothing else!
+
+Generate code-based rules based on key information extracted from a pension benefits scheme pasted below the ###EXTRACTION_HERE line.
+
+Specifically, generate a python function that takes as input an employee record and outputs the following information:
+- if the employee is already receiving a pension or not. For simplicity assume that an employee is either working (status attribute in employee record = deferred) or a pensioner (status attribute in employee record  = pensioner). Output is Boolean.
+- number of years left before employee becomes eligible for one of the pensions (take into account gender, early retirement, disability, or normal retirement dates). Note that if employee is already receiving pension (see question above), then the value should be -1. Output is number.
+- what inflationary increase will be used by the benefit scheme if any at all? If no percentage can be found in the document, apply a default value of 3%. Output is number
+- what percentage of pension will be given to either spouse or dependents of the pensioner after his/her death? For this it is necessary to take the married statues + dependents attributes into account in each employee record. Output is number
+- Is an increase given for disability due to incapacity or illness? If so, how much? Output is number. If there is no increase provided, output 0. 
+
+The answers to the above bullet points should each be mapped to the following respective keys: 
+- receiving_pension
+- years_left
+- inflationary_increase
+- pension_percentage_after_death
+- disability_increase
+
+The python script should parse a json file (./data/data.json) that is located in the same path as the executed file's path. This file should hence be looked up relative to the execution's file path rather than relative to the execution path.
+This json file contains employee information records. A few examples of the JSON records can be found below the line ###JSON_RECORDS. When the python script is executed, it should read this json file and pass each employee record to the earlier mentioned function. Lastly, the script's output should be another json file with values set for each employee based on the answers to the questions above. Values can be a boolean or number. Note that for each employee output, the employee id should be added in as well. The python script structure should be as such that it runs immediately when it is executed using `python script.py`
+The output file should be stored in data/processed_data.json, again, relative to the executioned file's path

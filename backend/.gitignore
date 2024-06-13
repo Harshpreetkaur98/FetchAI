@@ -1,0 +1,5 @@
+.env
+src/temp.py
+**/processed_data.json
+assets/prt_clean.txt
+**/__pycache__/

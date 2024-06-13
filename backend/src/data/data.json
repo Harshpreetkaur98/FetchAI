@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "age": 68,
+    "gender": "Male",
+    "tenure": 15,
+    "dependents": false,
+    "incapacitated": false,
+    "married": true,
+    "smoking": false,
+    "salary": 40000,
+    "contrib_percentage": 2.35,
+    "status": "pensioner"
+  },
+  {
+    "id": 2,
+    "age": 63,
+    "gender": "Female",
+    "tenure": 10,
+    "dependents": true,
+    "incapacitated": false,
+    "married": false,
+    "smoking": false,
+    "salary": 50000,
+    "contrib_percentage": 2.84,
+    "status": "pensioner"
+  },
+  {
+    "id": 3,
+    "age": 45,
+    "gender": "Female",
+    "tenure": 5,
+    "dependents": true,
+    "incapacitated": true,
+    "married": true,
+    "smoking": true,
+    "salary": 60000,
+    "contrib_percentage": 1.92,
+    "status": "deferred"
+  },
+  {
+    "id": 4,
+    "age": 50,
+    "gender": "Male",
+    "tenure": 8,
+    "dependents": false,
+    "incapacitated": false,
+    "married": true,
+    "smoking": true,
+    "salary": 70000,
+    "contrib_percentage": 2.76,
+    "status": "deferred"
+  },
+  {
+    "id": 5,
+    "age": 60,
+    "gender": "Female",
+    "tenure": 18,
+    "dependents": true,
+    "incapacitated": true,
+    "married": false,
+    "smoking": false,
+    "salary": 30000,
+    "contrib_percentage": 2.1,
+    "status": "pensioner"
+  }
+]
