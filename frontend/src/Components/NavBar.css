@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  background-size: 200% 200%;
+  color: white;
+  border: 1px solid white;
+}
+
+.navbar-brand {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.navbar-user .user-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
